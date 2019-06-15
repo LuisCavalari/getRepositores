@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repostitórios</title>
+    <style>
+        body {
+            background: #FF512F;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F09819, #FF512F);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(35, 69, 204, 0.87);
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .container h2 {
+            color: #FFF;
+        }
+
+        .container input[type^=text] {
+            width: 80%;
+            border-radius: 30px;
+            border: 2px solid #f7b733;
+            background-color: transparent;
+            padding: 10px;
+            color: #fff;
+
+        }
+
+        .container input[type^=button] {
+
+            margin-left: 5px;
+            background-color: #f7b733;
+            border: 1px solid transparent;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 900;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        ul#repositoriesList {
+            margin: 0 auto;
+            max-width: 900px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ul#repositoriesList li {
+            width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+            margin-top: 10px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Digite o nome do usuario</h2>
+        <input type="text" name="" id="name">
+        <input type="button" id="search" value="Pesquisar">
+    </div>
+    <ul id="repositoriesList">
+    </ul>
+    <div  style="display: flex; justify-content: center;align-items: center;">
+        <img id="gif" src="https://media0.giphy.com/media/52qtwCtj9OLTi/giphy.gif" style="display: none;" alt="">
+
+    </div>
+
+    <script src = "dist.js" ></script>
+
+</body>
+
+</html>
